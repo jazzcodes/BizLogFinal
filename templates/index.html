@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BizLog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:wght@400;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="/"> <img src="{{url_for('static', filename='logo.png')}}" alt="Logo"
+                                                   class="logo center"/></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/bizpredict">BizPredict</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="/query">Query</a>
+            </li>
+
+
+        </ul>
+
+        <ul class="right-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="tel:9872819427"><i class="fa fa-phone " style="font-size:36px;color:#3F72AF;"
+                                                             aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-whatsapp" aria-hidden="true"
+                                                style="font-size:36px;color:#3F72AF;"></i></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"
+                                                style="font-size:36px;color:#3F72AF;"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+<div id="about">
+    <img src="{{url_for('static', filename='about.png')}}" alt="about" class="about-pic"/>
+    <div class="container">
+
+
+        <div class="right-side">
+            <h2 class="side-heading"> About Us </h2>
+            <p class="side-text">
+                Introducing, the BizLog Sales Predictor, a standalone solution that empowers organizations to
+                increase sales revenue by providing timely actionable analytics.
+                <br>
+                Predict Your Next Sale With Actionable Customer Insights
+                <br>
+                The insights allow an organization to focus its sales efforts in the right direction.
+                Predict the percentage increase in sales by entering the number of working hours!
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer" id="contact">
+
+    <h4><strong>BizLog</strong></h4>
+    <p>
+
+        <br>
+        <strong>Help Desk : </strong> +91 98728 19427
+        <br>
+        <br>
+        <strong>e-mail: </strong>bizlog_contact@gmail.com
+
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p align="center"> Copyright &#169; 2021 BizLog. All Rights Reserved</p>
+    <img src="{{url_for('static', filename='contact-us.png')}}" alt="contact-us" class="contact-us-pic"/>
+
+
+</div>
+</body>
+</html>
